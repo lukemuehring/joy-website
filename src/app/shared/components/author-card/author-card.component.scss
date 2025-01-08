@@ -1,0 +1,27 @@
+@import "../../global.scss";
+
+$spacing: 24px;
+
+.card {
+  display: flex;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-radius: 8px;
+  padding: $spacing;
+
+  .img-container {
+    margin-right: $spacing;
+    .author-img {
+      height: 160px;
+    }
+  }
+
+  h3 {
+    font-size: x-large;
+    font-weight: 500;
+  }
+
+  .desc {
+    color: $font-light;
+  }
+}

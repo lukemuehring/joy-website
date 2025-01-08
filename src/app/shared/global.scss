@@ -1,0 +1,20 @@
+$font-light: #6d6c6c;
+$breakpoint-mobile: 768px;
+
+.light-text {
+  color: $font-light;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  .main-container {
+    width: 50%;
+
+    @media (max-width: $breakpoint-mobile) {
+      width: 90%;
+    }
+  }
+}

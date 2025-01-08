@@ -1,0 +1,19 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 15rem;
+
+  background-image: url("../../../../assets/images/dots.png");
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image */
+
+  h1 {
+    font: 700 4rem/120% Roboto, sans-serif;
+  }
+
+  .hero-subtitle {
+    font: 400 3rem/120% Roboto, sans-serif;
+  }
+}

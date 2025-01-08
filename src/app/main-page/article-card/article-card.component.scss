@@ -1,0 +1,50 @@
+@import "../../shared/global.scss";
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+
+  .article-img {
+    width: 100%;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+
+    .profile-photo {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      vertical-align: middle;
+      overflow: clip;
+      margin-right: 0.5rem;
+    }
+
+    .author-details {
+      color: $font-light;
+      font-size: medium;
+      font-weight: 500;
+    }
+  }
+
+  .content {
+    padding-bottom: 1rem;
+    .article-title {
+      font-size: x-large;
+      font-weight: 500;
+    }
+  }
+
+  .article-link {
+    text-decoration: none;
+    color: inherit;
+  }
+}

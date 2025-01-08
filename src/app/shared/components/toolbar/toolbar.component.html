@@ -1,0 +1,32 @@
+<!-- ICONS: -->
+<!-- https://fonts.google.com/icons?icon.set=Material+Icons&icon.style=Filled -->
+
+<mat-toolbar class="toolbar">
+  <button
+    (click)="goHome()"
+    class="toolbar-btn"
+    mat-icon-button
+    aria-label="Home"
+  >
+    <mat-icon>home</mat-icon>
+  </button>
+  <span class="spacer"></span>
+  <div class="right-side-links">
+    <button
+      (click)="goToAbout()"
+      class="toolbar-btn"
+      mat-button
+      aria-label="About Us"
+    >
+      About Us
+    </button>
+    <button
+      (click)="goToContact()"
+      class="toolbar-btn"
+      mat-button
+      aria-label="Contact"
+    >
+      <span>Contact</span>
+    </button>
+  </div>
+</mat-toolbar>

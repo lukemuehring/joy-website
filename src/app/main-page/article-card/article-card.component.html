@@ -1,0 +1,22 @@
+<article
+  class="article-container"
+  role="link"
+  tabindex="0"
+  (click)="openArticle(article.url)"
+>
+  <img [src]="article.photoUrl" alt="alttext" class="article-img" />
+  <div class="header">
+    <img
+      [src]="article.author.photoUrl"
+      alt="Photo of the author"
+      class="profile-photo"
+    />
+    <span class="author-details"> by {{ article.author.name }}</span>
+  </div>
+  <div class="content">
+    <h3 class="article-title">
+      {{ article.title }}
+    </h3>
+    <span class="light-text">{{ article.description }} </span>
+  </div>
+</article>

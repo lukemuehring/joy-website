@@ -1,0 +1,36 @@
+@import "../shared/global.scss";
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  .desc {
+    width: 50%;
+
+    @media (max-width: $breakpoint-mobile) {
+      width: 90%;
+    }
+  }
+
+  .about-us-container {
+    width: 90%;
+    margin-top: 2rem;
+  }
+
+  .authors-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.desc {
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: x-large;
+  font-weight: 500;
+}

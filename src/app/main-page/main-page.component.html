@@ -1,1 +1,9 @@
-<p>main-page works!</p>
+<app-hero-banner [title]="'Omnibus'" [subtitle]="'Recent Articles'">
+</app-hero-banner>
+<section class="main-content">
+  <div class="main-container">
+    @for (article of ARTICLES; track article.url) {
+    <app-article-card [article]="article"></app-article-card>
+    }
+  </div>
+</section>

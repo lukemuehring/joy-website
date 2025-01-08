@@ -1,0 +1,21 @@
+mat-toolbar.toolbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background: #0057b7;
+
+  height: 3rem;
+}
+
+button.toolbar-btn {
+  color: #ffffff;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.right-side-links {
+  display: flex;
+  gap: 1rem;
+}
