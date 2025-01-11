@@ -22,7 +22,7 @@ export class ToolbarComponent {
     this.router.navigate(["about"]);
   }
 
-  public goToContact(): void {
-    this.router.navigate(["contact"]);
-  }
+  // public goToContact(): void {
+  //   this.router.navigate(["contact"]);
+  // }
 }

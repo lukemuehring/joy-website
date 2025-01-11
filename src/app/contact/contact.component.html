@@ -1,1 +1,50 @@
-<p>contact works!</p>
+<app-hero-banner [title]="'Contact'"> </app-hero-banner>
+<div>
+  <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+    <div [formGroup]="contactForm">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Name" formControlName="name" required />
+        @if (contactForm.controls.name.invalid &&
+        (contactForm.controls.name.dirty || contactForm.controls.name.touched))
+        {
+        <mat-error>Name is required.</mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          placeholder="pat@example.com"
+          [formControl]="contactForm.controls.email"
+          required
+        />
+        @if (contactForm.controls.email.invalid &&
+        (contactForm.controls.email.dirty ||
+        contactForm.controls.email.touched)) { @if
+        (contactForm.controls.email.hasError('email')) {
+        <mat-error>Email must be a valid format.</mat-error>
+
+        } @else if (contactForm.controls.email.hasError('required')) {
+
+        <mat-error>Email is required.</mat-error>
+        } }
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Message</mat-label>
+        <input
+          matInput
+          placeholder="Write us a message..."
+          [formControl]="contactForm.controls.message"
+          required
+        />
+        @if (contactForm.controls.message.invalid &&
+        (contactForm.controls.message.dirty ||
+        contactForm.controls.message.touched)) {
+        <mat-error>Message is required.</mat-error>
+        }
+      </mat-form-field>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>

@@ -7,11 +7,11 @@
   <img [src]="article.photoUrl" alt="alttext" class="article-img" />
   <div class="header">
     <img
-      [src]="article.author.photoUrl"
+      [src]="article.authors[0].photoUrl"
       alt="Photo of the author"
       class="profile-photo"
     />
-    <span class="author-details"> by {{ article.author.name }}</span>
+    <span class="author-details"> by {{ article.authors[0].name }}</span>
   </div>
   <div class="content">
     <h3 class="article-title">

@@ -8,13 +8,15 @@
     </div>
     <div class="desc">{{ author.description }}</div>
     <div class="icons">
-      @for(c of author.contact; track c.url) { @if(c.method === "email") {
+      @for(c of author.contact; let i = $index; track c.url) { @if(c.method ===
+      "email") {
       <button
-        (click)="sendEmail(c.url)"
+        (click)="copyToClipboard(c.url)"
         class="icon-btn"
         mat-icon-button
+        [matTooltip]="c.url"
+        [matTooltipPosition]="'above'"
         aria-label="Email"
-        [title]="c.url"
       >
         <mat-icon>email</mat-icon>
       </button>

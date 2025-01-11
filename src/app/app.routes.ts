@@ -8,6 +8,6 @@ export const routes: Routes = [
   { path: "", component: MainPageComponent },
   { path: "about", component: AboutUsComponent },
   { path: "view-article", component: ArticleViewerComponent },
-  { path: "contact", component: ContactComponent },
+  // { path: "contact", component: ContactComponent },
   { path: "main", component: MainPageComponent },
 ];

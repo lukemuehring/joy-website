@@ -1,7 +1,7 @@
 import { IAuthor } from "./author";
 
 export interface IArticle {
-  author: IAuthor;
+  authors: IAuthor[];
   description: string;
   title: string;
   url: string;

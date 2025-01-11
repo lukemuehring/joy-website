@@ -9,10 +9,15 @@ $spacing: 24px;
   border-radius: 8px;
   padding: $spacing;
 
+  margin-bottom: 1rem;
+
   .img-container {
     margin-right: $spacing;
     .author-img {
-      height: 160px;
+      height: 10rem;
+      width: 10rem;
+      object-fit: cover;
+      border-radius: 8px;
     }
   }
 
@@ -23,5 +28,12 @@ $spacing: 24px;
 
   .desc {
     color: $font-light;
+  }
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; /* Change to column on smaller screens */
   }
 }
