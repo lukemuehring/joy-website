@@ -1,0 +1,15 @@
+.toolbar {
+  font-size: x-small;
+  display: flex;
+  justify-content: center;
+}
+
+.toolbar > span > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toolbar > span > a:hover {
+  color: red;
+  text-decoration: underline;
+}
