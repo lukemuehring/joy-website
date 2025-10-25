@@ -142,16 +142,6 @@ century, it was studied and treatments developed.`,
   {
     authors: [OMNIBUS_AUTHOR],
     description:
-      'Nuclear energy is an energy source that is friendlier to the environment. However, nuclear power plants have a lot of negative impacts associated with them.',
-    photoUrl: '/assets/images/power plant.png',
-    photoAltText: 'A nuclear power plant',
-    title:
-      'The Impact of Nuclear Power Plant Accidents on the Health of Individuals Over Generations',
-    url: 'assets/Alice Chen The Impact of Nuclear.pdf',
-  },
-  {
-    authors: [OMNIBUS_AUTHOR],
-    description:
       'Human Immunodeficiency Virus (HIV) is an infection that weakens the immune system, and if untreated, can lead to Acquired Immunodeficiency Syndrome (AIDS). Despite advancements in treatment, HIV remains a global public health issue, with millions affected worldwide.',
     photoUrl: '/assets/images/HIV.jpg',
     photoAltText:
