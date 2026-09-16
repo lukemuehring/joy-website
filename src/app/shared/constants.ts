@@ -89,6 +89,33 @@ export const AUTHORS: IAuthor[] = [
 export const ARTICLES: IArticle[] = [
   {
     authors: [OMNIBUS_AUTHOR],
+    description:
+      'Seafood allergy is an atypical response of the immune system to specific proteins within marine animals. Individuals with asthma or additional allergies to other foods like tree nuts may be at greater risk.',
+    photoUrl: '/assets/images/seafood.jpg',
+    photoAltText: 'An xray image of the lungs showing red spots.',
+    title: 'Sea Food Allergy',
+    url: 'assets/A-SeaFood Allergy.pdf',
+  },
+  {
+    authors: [OMNIBUS_AUTHOR],
+    description:
+      'Lung cancer is the uncontrollable cell growth (tumors) within the lung tissue.',
+    photoUrl: '/assets/images/tb.jpg',
+    photoAltText: 'An xray image of the lungs showing red spots.',
+    title: 'Tuberculosis',
+    url: 'assets/A-Lung Cancer.pdf',
+  },
+  {
+    authors: [OMNIBUS_AUTHOR],
+    description:
+      'Bipolar Disorder is a mental health condition that causes effects on a person’s mood, energy, behavior, and thought.',
+    photoUrl: '/assets/images/bipolar.jpg',
+    photoAltText: 'An image of two people in silhoutte.',
+    title: 'Bipolar Disorder',
+    url: 'assets/A-Bipolar Disorder.pdf',
+  },
+  {
+    authors: [OMNIBUS_AUTHOR],
     description: `Alzheimer’s disease (AD) is a progressive brain disorder and the leading cause of
 dementia worldwide. It was first identified in 1906 by Dr. Alois Alzheimer, a German doctor,
 who found unusual clumps of proteins (amyloid plaques) and twisted fibers (tau tangles) in a
